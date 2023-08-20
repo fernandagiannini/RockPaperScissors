@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(66, 65, 80);
+    color: rgb(209, 187, 187);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin: 2rem 1rem 4rem 1rem;
+}
+
+header {
+    margin: 5rem 1rem 5rem 1rem;
+    text-align: center;
+}
+
+.buttonSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img {
+    border-radius: 9%;
+}
+
+.rock {
+    margin: 2rem;
+    padding: 0.1rem;
+    background-color: rgb(66, 65, 80);
+    border-radius: 9%;
+}
+
+.paper {
+    margin: 2rem;
+    padding: 0.1rem;
+    background-color: rgb(66, 65, 80);
+    border-radius: 9%;
+}
+
+.scissors {
+    margin: 2rem;
+    padding: 0.1rem;
+    background-color: rgb(66, 65, 80);
+    border-radius: 9%;
+}
+
+.scoreBox {
+    margin: 1rem;
+    padding: 2rem 6rem;
+    border: solid rgb(48, 45, 45);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.scoreSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.userName {
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: 8%;
+    background-color: brown;
+}
+
+.computer {
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: 8%;
+    background-color: brown;
+}
+
+
+footer {
+    padding: 5rem 1rem;
+    text-align: center;
+}
