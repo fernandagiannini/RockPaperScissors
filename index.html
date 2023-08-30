@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
     <h1>Rock -  Paper - Scissors</h1>
-    <p>- descripcion del juego -</p>
+    <p>juego de piedra, papel o tijera es un juego simple en el que dos
+        jugadores eligen entre tres opciones: piedra, papel o tijera.</p>
+        <section><img src="./images/portada.jpg" alt="portada"></section>
     <label for="userName">User Name:</label>
-    <input type="text"><br> 
-    <button onclick="window.location.href = 'pages/game.html'">Play</button> 
+    <input id="nombre" type="text"><br> 
+    <button onclick="validarNombre()">Play</button> 
     <button onclick="window.location.href = 'pages/rules.html'">Rules</button>
-    (validar que no se pueda entrar al juego sin nombre) 
+
+
+    <script src="./scripts/game.js"></script>
 </body>
 </html>
