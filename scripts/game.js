@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const main = () => {
-        if (computerPoints < 10 && userPoints < 10) {
+       if (computerPoints < 10 && userPoints < 10) {
             rockButton.addEventListener('click', () => { compareOptions(1) })
             paperButton.addEventListener('click', () => { compareOptions(2) })
             scissorsButton.addEventListener('click', () => { compareOptions(3) })            
