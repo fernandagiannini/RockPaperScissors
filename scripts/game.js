@@ -5,9 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const scissorsButton = document.querySelector('.scissors')
     const scoreUser_h2 = document.getElementById("scoreUser")
     const scoreComputer_h2 = document.getElementById("scoreComputer")
+    const finalMessage= document.getElementById("winner")
 
-    let max = Math.floor(3)
-    let min = Math.ceil(1)
+    let max = 3
+    let min = 1
     let userPoints = 0
     let computerPoints = 0
 
@@ -26,7 +27,27 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("again")
     }
 
-    compareOptions = (userOption) => {        //asigna un valor ramdom a computerOption y lo compara con userOption
+    const checkGameStatus = () => {
+        if (computerPoints === 10 || userPoints === 10) {
+            //remover eventos
+            rockButton.removeEventListener('click', rockClickHandler)
+            paperButton.removeEventListener('click', paperClickHandler)
+            scissorsButton.removeEventListener('click', scissorsClickHandler)
+
+            if (computerPoints === 10) {
+                finalMessage.innerHTML = "You loose"
+            }
+
+            if (userPoints === 10) {
+                finalMessage.innerHTML = "You win"
+            }
+
+
+        }
+    }
+
+
+    const compareOptions = (userOption) => {        //asigna un valor ramdom a computerOption y lo compara con userOption
 
         computerOption = Math.floor(Math.random() * (max - min + 1) + min)
 
@@ -39,15 +60,26 @@ document.addEventListener('DOMContentLoaded', () => {
         if (userOption === 1 && computerOption === 3) { win() }
         if (userOption === 2 && computerOption === 3) { loose() }
         if (userOption === 3 && computerOption === 3) { again() }
+        checkGameStatus()
     }
 
+    const rockClickHandler = () => {
+        compareOptions(1);
+    }
 
+    const paperClickHandler = () => {
+        compareOptions(2);
+    }
+
+    const scissorsClickHandler = () => {
+        compareOptions(3);
+    }
 
     const main = () => {
-       if (computerPoints < 10 && userPoints < 10) {
-            rockButton.addEventListener('click', () => { compareOptions(1) })
-            paperButton.addEventListener('click', () => { compareOptions(2) })
-            scissorsButton.addEventListener('click', () => { compareOptions(3) })            
+        if (computerPoints < 10 && userPoints < 10) {
+            rockButton.addEventListener('click', rockClickHandler)
+            paperButton.addEventListener('click', paperClickHandler)
+            scissorsButton.addEventListener('click', scissorsClickHandler)
         }
     }
 
