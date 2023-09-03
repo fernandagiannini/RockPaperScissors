@@ -52,19 +52,22 @@ img {
 }
 
 .scoreBox {
+    /*cuadrito donde se ven los puntos */
     margin: 1rem;
     padding: 2rem 6rem;
     border: solid rgb(48, 45, 45);
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 2rem;
 }
 
 .scoreSection {
-    /*cuadrito donde se ven los puntos*/
+    /*seccion donde se ven los puntos y los usuarios*/
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 .userName_Div {
@@ -85,11 +88,13 @@ img {
 
 
 
-.bottomMessage_Section{
+.bottomMessage_Section {
     margin: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 3rem;
+    color: #fafafa;
 }
 
 .seeGameButton_Section {
@@ -108,7 +113,7 @@ img {
     background-color: rgb(216, 92, 43);
     border-color: rgb(216, 92, 43);
     font-weight: bold;
-    text-transform: uppercase;   
+    text-transform: uppercase;
 }
 
 
