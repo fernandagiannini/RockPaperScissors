@@ -15,30 +15,31 @@
     <hr>
     <main>
         <section class="scoreSection">
-            <div class="userName">
+            <div class="userName_Div">
                 <h1>User</h1>
             </div>
             <div class="scoreBox">
-                <h2 id ="scoreUser">00</h2>
+                <h2 id="scoreUser">00</h2>
                 <h2>:</h2>
-                <h2 id ="scoreComputer">00</h2>
+                <h2 id="scoreComputer">00</h2>
             </div>
-            <div class="computer">
+            <div class="computer_Div">
                 <h1>computer</h1>
             </div>
         </section>
-        <section class="buttonSection">
+        <section class="buttons_Section">
             <button class="rock"> <img src="../images/piedra.png" alt=""> </button>
             <button class="paper"> <img src="../images/papel.png" alt=""> </button>
-            <button class="scissors"> <img src="../images/tijera.png" alt=""> </button>            
+            <button class="scissors"> <img src="../images/tijera.png" alt=""> </button>
         </section>
-       
-        <section>
-            <label for="winner">You win/you loose</label> <br>
-            (aqui va animacion)
-            <br>
-            <button class="seeGame">Ver partida</button>
+
+        <section class="bottomMessage_Section">
+            <label id="winner">You win/you loose</label>
         </section>
+        <section class="seeGameButton_Section">         
+            <button class ="seeGame_Button" onclick="window.location.href = './history.html'">Ver Partida</button>
+        </section>
+
     </main>
     <hr>
     <footer>
