@@ -70,7 +70,7 @@ img {
     
 }
 
-.userName_Div {
+.userName {
     /*cuadrito donde dice el nombre del usuario*/
     margin: 3rem;
     padding: 1rem;
@@ -116,7 +116,16 @@ img {
     text-transform: uppercase;
 }
 
-
+#botonBack {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1px 10px;
+    font-size: 20px;
+    background-color: rgb(66, 65, 80);
+    margin: 10px 20px;
+    cursor: pointer;
+    border-radius: 60px;
+}
 
 footer {
     padding: 5rem 1rem;
