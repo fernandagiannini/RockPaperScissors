@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+
 body {
     background: rgb(66, 65, 80);
     color: rgb(209, 187, 187);
@@ -19,7 +20,7 @@ header {
     text-align: center;
 }
 
-.buttonSection {
+.buttons_Section {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -60,24 +61,56 @@ img {
 }
 
 .scoreSection {
+    /*cuadrito donde se ven los puntos*/
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.userName {
+.userName_Div {
+    /*cuadrito donde dice el nombre del usuario*/
     margin: 3rem;
     padding: 1rem;
     border-radius: 8%;
     background-color: brown;
 }
 
-.computer {
+.computer_Div {
+    /*cuadrito donde dice Computer*/
     margin: 3rem;
     padding: 1rem;
     border-radius: 8%;
     background-color: brown;
 }
+
+
+
+.bottomMessage_Section{
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.seeGameButton_Section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.seeGame_Button {
+    /*boton Ver Partida*/
+    color: rgb(48, 45, 45);
+    width: 100px;
+    height: 40px;
+    margin: 1rem;
+    border-radius: 8%;
+    background-color: rgb(216, 92, 43);
+    border-color: rgb(216, 92, 43);
+    font-weight: bold;
+    text-transform: uppercase;   
+}
+
 
 
 footer {
