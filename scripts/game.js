@@ -87,5 +87,30 @@ document.addEventListener('DOMContentLoaded', () => {
     main()
 
 
-
 })
+
+
+function validarNombre() {
+    const nombreInput = document.getElementById('nombre');
+    const nombre = nombreInput.value.trim();
+  
+    if (nombre.length >= 3 && nombre.length <= 15) {
+      sessionStorage.setItem('nombre', nombre); // Guardar el nombre en sessionStorage
+      window.location.href = 'pages/game.html'; // Redirigir a otra_pagina.html
+    } else {
+      alert('El nombre debe tener entre 3 y 15 caracteres');
+    }
+  }
+  
+  // En otra_pagina.html, leer el nombre almacenado en sessionStorage y mostrarlo en el h1
+  const nombreH1 = document.getElementById('nombreH1');
+  const nombreAlmacenado = sessionStorage.getItem('nombre');
+  
+  if (nombreAlmacenado) {
+    nombreH1.textContent = `${nombreAlmacenado}`;
+  }
+
+
+
+
+
